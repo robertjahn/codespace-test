@@ -1,4 +1,6 @@
 {
+"name": "Test Env Var",
+"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
 "secrets": {
    "TEST_VAR10": {
      "description": "my TEST_VAR10"
