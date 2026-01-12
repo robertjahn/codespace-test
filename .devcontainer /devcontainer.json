@@ -1,30 +1,16 @@
 {
-"name": "Test Env Var",
-"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-"secrets": {
-   "TEST_VAR10": {
-     "description": "my TEST_VAR10"
-   },
-   "TEST_VAR20": {
-     "description": "my TEST_VAR20"
-   },
-   "TEST_VAR30": {
-     "description": "my TEST_VAR30"
-   },
-   "TEST_VAR40": {
-     "description": "my TEST_VAR40"
-   },
-    "TEST_VAR1": {
-         "description": "my TEST_VAR1"
-    }
- },
-   "containerEnv": {
-    "TEST_VAR1": "${secrets:TEST_VAR1}"
-   },
- "remoteEnv": {
-   "TEST_VAR10": "${localEnv:TEST_VAR10}",
-   "TEST_VAR20": "${localEnv:TEST_VAR20}",
-   "TEST_VAR30": "${localEnv:TEST_VAR30}",
-   "TEST_VAR40": "${localEnv:TEST_VAR40}"
- }
+  "name": "Codespace Test",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "secrets": {
+    "TEST_VAR10": { "description": "my TEST_VAR10" },
+    "TEST_VAR20": { "description": "my TEST_VAR20" },
+    "TEST_VAR30": { "description": "my TEST_VAR30" },
+    "TEST_VAR40": { "description": "my TEST_VAR40" }
+  },
+  "remoteEnv": {
+    "TEST_VAR10": "${localEnv:TEST_VAR10}",
+    "TEST_VAR20": "${localEnv:TEST_VAR20}",
+    "TEST_VAR30": "${localEnv:TEST_VAR30}",
+    "TEST_VAR40": "${localEnv:TEST_VAR40}"
+  }
 }
