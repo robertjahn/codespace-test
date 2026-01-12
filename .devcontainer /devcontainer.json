@@ -1,0 +1,11 @@
+{
+  "containerEnv": {
+    "DT_TENANT_3RDGEN": "${secrets:TEST_VAR}"
+  },
+  //Add recommended secrets 
+  "secrets": {
+    "TEST_VAR": {
+      "description": my TEST_VAR"
+    }
+  }
+}
