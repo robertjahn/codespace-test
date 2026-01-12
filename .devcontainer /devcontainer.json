@@ -1,3 +1,4 @@
+{
 "secrets": {
    "TEST_VAR10": {
      "description": "my TEST_VAR10"
@@ -10,8 +11,14 @@
    },
    "TEST_VAR40": {
      "description": "my TEST_VAR40"
-   }
+   },
+    "TEST_VAR1": {
+         "description": "my TEST_VAR1"
+    }
  },
+   "containerEnv": {
+    "TEST_VAR1": "${secrets:TEST_VAR1}"
+   },
  "remoteEnv": {
    "TEST_VAR10": "${localEnv:TEST_VAR10}",
    "TEST_VAR20": "${localEnv:TEST_VAR20}",
