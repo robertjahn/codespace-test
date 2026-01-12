@@ -3,6 +3,9 @@
   "secrets": {
     "TEST_VAR1": {
       "description": "my TEST_VAR1"
+    },
+    "TEST_VAR4": {
+      "description": "my TEST_VAR4"
     }
   }
 }
